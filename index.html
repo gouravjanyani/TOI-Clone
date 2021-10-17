@@ -1,0 +1,2012 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latest News, Breaking News, Top News Headlines</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <style>
+      .head {
+        font-family: "Times New Roman", sans-serif;
+        font-size: 3rem;
+      }
+      body {
+        font-family: "proximanova", sans-serif;
+      }
+      .header-nav:hover {
+        background-color: white;
+        color: #000000;
+      }
+      .header-nav {
+        color: white;
+      }
+
+      .left-header-nav:hover {
+        background-color: #aaa;
+        border-top: 3px solid black;
+        font-weight: bold;
+        color: black;
+      }
+      .left-header-nav {
+        background-color: #ddd;
+        color: black;
+      }
+      .right-header-nav:hover {
+        background-color: #000;
+        color: white;
+      }
+      .right-header-nav {
+        color: white;
+      }
+      .header .most-popular {
+        font-size: 13px;
+      }
+      .most-popular::before {
+        content: " ";
+        height: 1px;
+        width: 12%;
+        margin-bottom: 0.2rem;
+        margin-right: 0.5rem;
+        background-color: #333333;
+        display: inline-block;
+      }
+
+      .most-popular::after {
+        content: " ";
+        height: 1px;
+        width: 12%;
+        margin-bottom: 0.2rem;
+        margin-left: 0.5rem;
+        background-color: #333333;
+        display: inline-block;
+      }
+      .border-on-right {
+        border-right: 1px solid #333333;
+        height: 4rem;
+        padding-right: 2rem;
+      }
+      .follow-footer::before {
+        content: " ";
+        height: 1px;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 1rem;
+        background-color: #333333;
+        display: block;
+      }
+      ul.footer-section > li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 12px;
+      }
+      ul.footer-section > li {
+        width: 180px;
+        font-size: 12px;
+      }
+      ul.footer-section {
+        width: 617.5px;
+        height: 171px;
+        overflow: visible;
+      }
+
+      .footer-section-heading::before {
+        content: " ";
+        height: 1px;
+        width: 2%;
+        margin-bottom: 0.2rem;
+        margin-left: -0.9rem;
+        background-color: #333333;
+        display: inline-block;
+      }
+      .footer-section-heading::after {
+        content: " ";
+        height: 1px;
+        width: 60%;
+        margin-bottom: 0.2rem;
+        margin-left: 0.4rem;
+        background-color: #333333;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="container-fluid text-center p-3"
+      style="background-color: #000000"
+    >
+      <h1 class="text-white head">THE TIMES OF INDIA</h1>
+      <span>
+        <span class="text-white"> Bhopal </span>
+        <i class="bi bi-cloud-rain text-white"></i>
+        <span class="">
+          <a
+            href="/weather/city-Bhopal.cms"
+            target="_blank"
+            class="text-decoration-none text-white"
+          >
+            <span class="temp">
+              <span class="wdC">24°<small>C</small></span>
+            </span>
+          </a>
+        </span>
+        <span class="optionshome">
+          <a
+            pg="#Change-Fahrenheit~Header-Weather"
+            onclick="$('.wdF').hide();$('.wdC').show();$('#wdCid').hide();$('#wdFid').show();"
+            style="cursor: pointer; display: none"
+            id="wdCid"
+            >°C</a
+          >
+        </span>
+        <a
+          href="/weather.cms"
+          target="_blank"
+          class="arrow text-decoration-none text-white"
+          pg="#Click~Header-Weather"
+          >»</a
+        >
+      </span>
+    </header>
+    <div class="row sticky-top" style="background-color: #be2b27">
+      <div class="col"></div>
+      <div class="col-8">
+        <div class="d-flex justify-content-between">
+          <nav class="text-white small" style="background-color: #be2b27">
+            <a href="#" class="p-1"
+              ><i class="bi bi-house-door-fill text-white"></i
+            ></a>
+            <a href="#" class="text-decoration-none p-1 header-nav"
+              >Most shareds</a
+            >
+            <a href="#" class="text-decoration-none p-1 header-nav"
+              >Latest news</a
+            >
+            <a href="#" class="text-decoration-none p-1 header-nav"
+              >Most Read</a
+            >
+            <a href="#" class="text-decoration-none p-1 header-nav"
+              >Most Commented</a
+            >
+            <a href="#" class="text-decoration-none p-1 header-nav"
+              >Delhi ELections</a
+            >
+            <a href="#" class="text-decoration-none p-1 header-nav"
+              >Bihar Elections</a
+            >
+          </nav>
+          <div class="">
+            <i class="bi bi-search text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-8">
+        <div class="mb-2"><small>News > Popular News</small></div>
+        <div class="h3 border-bottom border-2 border-dark py-1 mb-4 fw-bold">
+          Most Shared & Popular News
+        </div>
+        <div class="row mb-3">
+          <div class="col-8">
+            <nav class="mb-3 py-1" style="background-color: #dddddd">
+              <a
+                href="#"
+                class="text-decoration-none px-3 py-1 left-header-nav text-dark"
+                ><small>ANYTIME</small></a
+              >
+              <a
+                href="#"
+                class="text-decoration-none px-3 py-1 left-header-nav text-dark"
+                ><small>LAST 24 HRS</small></a
+              >
+              <a
+                href="#"
+                class="text-decoration-none px-3 py-1 left-header-nav text-dark"
+                ><small>PAST 4 DAYS</small></a
+              >
+              <a
+                href="#"
+                class="text-decoration-none px-3 py-1 left-header-nav text-dark"
+                ><small>PAST WEEK</small></a
+              >
+              <a
+                href="#"
+                class="text-decoration-none text-dark px-3 py-1 left-header-nav"
+                ><small>PAST MONTH</small></a
+              >
+            </nav>
+
+            <ul class="list-unstyled">
+              <li class="border-bottom py-3">
+                <a
+                  pg="#1"
+                  href="/Bhabiji-Ghar-Par-Hain-actress-Soma-Rathods-glamorous-photo-from-her-younger-days-goes-viral-a-look-at-the-unrecognisable-pics-of-other-actors-from-the-show/articleshow/83750909.cms"
+                  title="Bhabiji Ghar Par Hain actress Soma Rathod's glamorous photo from her younger days goes viral; a look at the unrecognisable pics of other actors from the show"
+                  class="w_img"
+                  ><img
+                    pg="#1"
+                    src="https://static.toiimg.com/thumb/imgsize-773164,msid-83750909,width-141,resizemode-4/83750909.jpg"
+                    width="141px"
+                    height="85px "
+                    class="m-2 ms-0" /></a
+                ><span class=""
+                  ><strong class=""
+                    ><a
+                      pg="#1"
+                      class="text-decoration-none text-dark"
+                      title="Bhabiji Ghar Par Hain actress Soma Rathod's glamorous photo from her younger days goes viral; a look at the unrecognisable pics of other actors from the show"
+                      href="/tv/news/hindi/bhabiji-ghar-par-hain-actress-soma-rathods-glamorous-photo-from-her-younger-days-goes-viral-a-look-at-the-unrecognisable-pics-of-other-actors-from-the-show/articleshow/83750909.cms"
+                      >Bhabiji Ghar Par Hain actress Soma Rathod's glamorous
+                      photo from her younger days goes viral; a look at the
+                      unrecognisable pics of other actors from the show<i
+                        class="psstoryicon"
+                      ></i></a
+                  ></strong>
+                  <div class="cbl"></div>
+                  <art_synopsis
+                    >A photo of Bhabiji Ghar Par Hain actress Soma Rathod aka
+                    'amaa ji''s photo from her younger days has gone viral on
+                    social media. The actress looks glamorous in her photo from
+                    the early days and is unrecognisable. There are many other
+                    actors from the show who look completely different now.
+                    Let's take a look: (Photo: Instagram)</art_synopsis
+                  ></span
+                >
+              </li>
+              <li class="border-bottom py-3">
+                <a
+                  pg="#1"
+                  href="/Bhabiji-Ghar-Par-Hain-actress-Soma-Rathods-glamorous-photo-from-her-younger-days-goes-viral-a-look-at-the-unrecognisable-pics-of-other-actors-from-the-show/articleshow/83750909.cms"
+                  title="Bhabiji Ghar Par Hain actress Soma Rathod's glamorous photo from her younger days goes viral; a look at the unrecognisable pics of other actors from the show"
+                  class="w_img"
+                  ><img
+                    pg="#1"
+                    src="https://static.toiimg.com/thumb/imgsize-773164,msid-83750909,width-141,resizemode-4/83750909.jpg"
+                    width="141px"
+                    height="85px "
+                    class="m-2 ms-0" /></a
+                ><span class=""
+                  ><strong class=""
+                    ><a
+                      pg="#1"
+                      class="text-decoration-none text-dark"
+                      title="Bhabiji Ghar Par Hain actress Soma Rathod's glamorous photo from her younger days goes viral; a look at the unrecognisable pics of other actors from the show"
+                      href="/tv/news/hindi/bhabiji-ghar-par-hain-actress-soma-rathods-glamorous-photo-from-her-younger-days-goes-viral-a-look-at-the-unrecognisable-pics-of-other-actors-from-the-show/articleshow/83750909.cms"
+                      >Bhabiji Ghar Par Hain actress Soma Rathod's glamorous
+                      photo from her younger days goes viral; a look at the
+                      unrecognisable pics of other actors from the show<i
+                        class="psstoryicon"
+                      ></i></a
+                  ></strong>
+                  <div class="cbl"></div>
+                  <art_synopsis
+                    >A photo of Bhabiji Ghar Par Hain actress Soma Rathod aka
+                    'amaa ji''s photo from her younger days has gone viral on
+                    social media. The actress looks glamorous in her photo from
+                    the early days and is unrecognisable. There are many other
+                    actors from the show who look completely different now.
+                    Let's take a look: (Photo: Instagram)</art_synopsis
+                  ></span
+                >
+              </li>
+              <li class="border-bottom py-3">
+                <a
+                  pg="#1"
+                  href="/Bhabiji-Ghar-Par-Hain-actress-Soma-Rathods-glamorous-photo-from-her-younger-days-goes-viral-a-look-at-the-unrecognisable-pics-of-other-actors-from-the-show/articleshow/83750909.cms"
+                  title="Bhabiji Ghar Par Hain actress Soma Rathod's glamorous photo from her younger days goes viral; a look at the unrecognisable pics of other actors from the show"
+                  class="w_img"
+                  ><img
+                    pg="#1"
+                    src="https://static.toiimg.com/thumb/imgsize-773164,msid-83750909,width-141,resizemode-4/83750909.jpg"
+                    width="141px"
+                    height="85px "
+                    class="m-2 ms-0" /></a
+                ><span class=""
+                  ><strong class=""
+                    ><a
+                      pg="#1"
+                      class="text-decoration-none text-dark"
+                      title="Bhabiji Ghar Par Hain actress Soma Rathod's glamorous photo from her younger days goes viral; a look at the unrecognisable pics of other actors from the show"
+                      href="/tv/news/hindi/bhabiji-ghar-par-hain-actress-soma-rathods-glamorous-photo-from-her-younger-days-goes-viral-a-look-at-the-unrecognisable-pics-of-other-actors-from-the-show/articleshow/83750909.cms"
+                      >Bhabiji Ghar Par Hain actress Soma Rathod's glamorous
+                      photo from her younger days goes viral; a look at the
+                      unrecognisable pics of other actors from the show<i
+                        class="psstoryicon"
+                      ></i></a
+                  ></strong>
+                  <div class="cbl"></div>
+                  <art_synopsis
+                    >A photo of Bhabiji Ghar Par Hain actress Soma Rathod aka
+                    'amaa ji''s photo from her younger days has gone viral on
+                    social media. The actress looks glamorous in her photo from
+                    the early days and is unrecognisable. There are many other
+                    actors from the show who look completely different now.
+                    Let's take a look: (Photo: Instagram)</art_synopsis
+                  ></span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <div class="h6 fw-bold">MOST POPULAR</div>
+            <nav
+              class="
+                mb-3
+                border-bottom border-3 border-dark
+                w-100
+                d-flex
+                justify-content-start
+              "
+              style="background-color: #aaa; border-bottom: 0"
+            >
+              <a
+                href="#"
+                class="text-decoration-none px-1 py-1 right-header-nav"
+                style="border-right: 1px solid #fff"
+                ><small>SHARED</small></a
+              >
+              <a
+                href="#"
+                class="text-decoration-none px-1 py-1 right-header-nav"
+                style="border-right: 1px solid #fff"
+                ><small>COMMENTED</small></a
+              >
+              <a
+                href="#"
+                class="text-decoration-none px-1 py-1 right-header-nav"
+                style="border-right: 1px solid #fff"
+                ><small>READ</small></a
+              >
+              <a
+                href="#"
+                class="text-decoration-none px-1 py-1 right-header-nav"
+                ><small>TRENDING</small></a
+              >
+            </nav>
+            <div class="">
+              <ol class="list-unstyled">
+                <div>
+                  <ul class="list-unstyled">
+                    <li class="border-bottom py-1">
+                      <a
+                        pg="Most_Popular_RHS-Most_Shared#Story_View-1-geturl"
+                        href="/sports/cricket/ipl/top-stories/rahul-dravid-appointed-head-coach-paras-mhambrey-bowling-coach-till-2023/articleshow/87051670.cms"
+                        class="small text-decoration-none text-dark"
+                        ><span class=""
+                          >Rahul Dravid appointed Team India head coach, Paras
+                          Mhambrey bowling coach till 2023</span
+                        ></a
+                      >
+                    </li>
+                    <li class="border-bottom py-1">
+                      <a
+                        pg="Most_Popular_RHS-Most_Shared#Story_View-2-geturl"
+                        href="/city/mumbai/mumbai-man-chases-bag-thief-gets-stabbed-to-death-in-virar/articleshow/87030828.cms"
+                        class="small text-decoration-none text-dark"
+                        ><span
+                          >Mumbai: Man chases bag thief, gets stabbed to death
+                          at Virar railway station</span
+                        ></a
+                      >
+                    </li>
+                    <li class="border-bottom py-1">
+                      <a
+                        pg="Most_Popular_RHS-Most_Shared#Story_View-3-geturl"
+                        href="/entertainment/hindi/bollywood/news/aryan-khans-video-call-with-gauri-shah-rukh-khan-sending-money-for-canteen-food-top-updates-about-the-drugs-case/photostory/87038684.cms"
+                        class="small text-decoration-none text-dark"
+                        ><span
+                          >Aryan Khan’s video call with Gauri, Shah Rukh Khan
+                          sending money for canteen food: Top updates about the
+                          drugs case</span
+                        ></a
+                      >
+                    </li>
+                    <li class="border-bottom py-1">
+                      <a
+                        pg="Most_Popular_RHS-Most_Shared#Story_View-4-geturl"
+                        href="/sports/cricket/ipl/top-stories/after-three-unsuccessful-attempts-bcci-manages-to-convince-dravid-to-take-up-team-india-coaching-job-waiting-for-his-confirmation/articleshow/87051390.cms"
+                        class="text-decoration-none text-dark"
+                        ><span class="small"
+                          >After three unsuccessful attempts, BCCI manages to
+                          convince Dravid to take up Team India coaching job,
+                          waiting for his confirmation</span
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </ol>
+              <span class="more most-popular"
+                ><a
+                  pg="Most_Popular_RHS-Most_Shared#Section_View_More"
+                  href="/mostshared.cms"
+                  class="text-decoration-none text-dark"
+                  style="font-size: 13px"
+                  >SEE ALL MOST SHARED STORIES</a
+                ></span
+              >
+              <div class="row border-top border-4 border-dark mt-2">
+                <div
+                  class="fs-5 fw-bold mt-3"
+                  style="font-family: Times New Roman, sans-serif"
+                >
+                  TOP NEWS STORIES
+                </div>
+                <div>
+                  <ul class="list-unstyled">
+                    <li class="d-flex justify-content-start border-bottom py-2">
+                      <a
+                        pg="#1"
+                        href="/india/at-congress-helm-for-now-sonia-faces-host-of-challenges/articleshow/87074853.cms"
+                        title="At Congress helm for now, Sonia Gandhi faces host of challenges"
+                        class="w_img me-1"
+                        ><img
+                          pg="#1"
+                          src="https://static.toiimg.com/thumb/imgsize-23454,msid-87074846,width-81,resizemode-4/87074846.jpg"
+                          height="60px"
+                          width="80px" /></a
+                      ><span
+                        ><a
+                          pg="-2128958273#1"
+                          title="At Congress helm for now, Sonia Gandhi faces host of challenges"
+                          class="
+                            small
+                            text-decoration-none text-dark
+                            ms-2
+                            d-inline-block
+                          "
+                          href="/india/at-congress-helm-for-now-sonia-faces-host-of-challenges/articleshow/87074853.cms"
+                          >At Congress helm for now, Sonia Gandhi faces host</a
+                        ></span
+                      >
+                    </li>
+                    <li class="d-flex justify-content-start border-bottom py-2">
+                      <a
+                        pg="#2"
+                        href="/india/pakistan-nsa-among-those-invited-for-indias-afghanistan-conference/articleshow/87068048.cms"
+                        title="Pak NSA invited for India's Afg conference"
+                        class="w_img me-2"
+                        ><img
+                          pg="#2"
+                          src="https://static.toiimg.com/thumb/imgsize-852967,msid-87068122,width-81,resizemode-4/87068122.jpg"
+                          height="60px"
+                          width="80px" /></a
+                      ><span
+                        ><a
+                          pg="-2128958273#2"
+                          title="Pak NSA invited for India's Afg conference"
+                          class="small text-decoration-none text-dark ms-2"
+                          href="/india/pakistan-nsa-among-those-invited-for-indias-afghanistan-conference/articleshow/87068048.cms"
+                          >Pak NSA invited for India's Afg conference</a
+                        ></span
+                      >
+                    </li>
+                    <li class="d-flex justify-content-start border-bottom py-2">
+                      <a
+                        pg="#3"
+                        href="/india/centres-of-excellence-sprout-as-culture-of-mediocrity-grows/articleshow/87067101.cms"
+                        title="Excellence on signboards, mediocrity inside"
+                        class="w_img me-2"
+                        ><img
+                          pg="#3"
+                          src="https://static.toiimg.com/thumb/imgsize-72608,msid-87067303,width-81,resizemode-4/87067303.jpg"
+                          height="60px"
+                          width="80px" /></a
+                      ><span
+                        ><a
+                          pg="-2128958273#3"
+                          title="Excellence on signboards, mediocrity inside"
+                          class="small text-decoration-none text-dark ms-2"
+                          href="/india/centres-of-excellence-sprout-as-culture-of-mediocrity-grows/articleshow/87067101.cms"
+                          >Excellence on signboards, mediocrity inside</a
+                        ></span
+                      >
+                    </li>
+                    <li class="d-flex justify-content-start border-bottom py-2">
+                      <a
+                        pg="#4"
+                        href="/india/jk-non-local-street-food-vendor-killed-in-srinagar/articleshow/87064488.cms"
+                        title="Terrorists kill 2 non-Kashmiris in Jammu &amp; Kashmir"
+                        class="w_img me-2"
+                        ><img
+                          pg="#4"
+                          src="https://static.toiimg.com/thumb/imgsize-1356384,msid-87064698,width-81,resizemode-4/87064698.jpg"
+                          height="60px"
+                          width="80px" /></a
+                      ><span
+                        ><a
+                          pg="-2128958273#4"
+                          title="Terrorists kill 2 non-Kashmiris in Jammu &amp; Kashmir"
+                          class="small text-decoration-none text-dark ms-2"
+                          href="/india/jk-non-local-street-food-vendor-killed-in-srinagar/articleshow/87064488.cms"
+                          >Terrorists kill 2 non-Kashmiris in Jammu &amp;</a
+                        ></span
+                      >
+                    </li>
+                    <li class="d-flex justify-content-start border-bottom py-2">
+                      <a
+                        pg="#5"
+                        href="/india/coronavirus-live-updates-october-15/liveblog/87033415.cms"
+                        title="Live: India reports 14,146 new cases, 144 deaths in 24 hours"
+                        class="w_img me-2"
+                        ><img
+                          pg="#5"
+                          src="https://static.toiimg.com/photo//photo/87033415.cms.cms"
+                          height="60px"
+                          width="80px" /></a
+                      ><span
+                        ><a
+                          pg="-2128958273#5"
+                          title="Live: India reports 14,146 new cases, 144 deaths in 24 hours"
+                          class="small text-decoration-none text-dark ms-2"
+                          href="/india/coronavirus-live-updates-october-15/liveblog/87033415.cms"
+                          >Live: India reports 14,146 new cases, 144 deaths
+                          in</a
+                        ></span
+                      >
+                    </li>
+                    <li class="d-flex justify-content-start border-bottom py-2">
+                      <a
+                        pg="#6"
+                        href="/city/live-news-from-cities-night-curfew-in-up-rajasthan-mp-jharkhand-chhattisgarh-16-october-2021/liveblog/87053335.cms"
+                        title="Live: 5 dead, 20 missing as heavy rain hits Kerala"
+                        class="w_img me-2"
+                        ><img
+                          pg="#6"
+                          src="https://static.toiimg.com/photo//photo/87053335.cms.cms"
+                          height="60px"
+                          width="80px" /></a
+                      ><span
+                        ><a
+                          pg="-2128958273#6"
+                          title="Live: 5 dead, 20 missing as heavy rain hits Kerala"
+                          class="small text-decoration-none text-dark ms-2"
+                          href="/city/live-news-from-cities-night-curfew-in-up-rajasthan-mp-jharkhand-chhattisgarh-16-october-2021/liveblog/87053335.cms"
+                          >Live: 5 dead, 20 missing as heavy rain hits Kerala</a
+                        ></span
+                      >
+                    </li>
+                    <li class="d-flex justify-content-start border-bottom py-2">
+                      <a
+                        pg="#7"
+                        href="/india/ma-mamata-when-politics-enters-the-pandal/articleshow/87065285.cms"
+                        title="Ma &amp; Mamata Banerjee: When politics enters the pandal"
+                        class="w_img me-2"
+                        ><img
+                          pg="#7"
+                          src="https://static.toiimg.com/thumb/imgsize-59998,msid-87065296,width-81,resizemode-4/87065296.jpg"
+                          height="60px"
+                          width="80px" /></a
+                      ><span
+                        ><a
+                          pg="-2128958273#7"
+                          title="Ma &amp; Mamata Banerjee: When politics enters the pandal"
+                          class="small text-decoration-none text-dark ms-2"
+                          href="/india/ma-mamata-when-politics-enters-the-pandal/articleshow/87065285.cms"
+                          >Ma &amp; Mamata Banerjee: When politics enters the</a
+                        ></span
+                      >
+                    </li>
+                    <li class="d-flex justify-content-start border-bottom py-2">
+                      <a
+                        pg="#8"
+                        href="/city/lucknow/sit-recovers-two-weapons-from-house-of-accused/articleshow/87073323.cms"
+                        title="Kheri violence: SIT recovers 2 weapons from house of accused"
+                        class="w_img me-2"
+                        ><img
+                          pg="#8"
+                          src="https://static.toiimg.com/thumb/imgsize-906933,msid-87075778,width-81,resizemode-4/87075778.jpg"
+                          height="60px"
+                          width="80px" /></a
+                      ><span
+                        ><a
+                          pg="-2128958273#8"
+                          title="Kheri violence: SIT recovers 2 weapons from house of accused"
+                          class="small text-decoration-none text-dark ms-2"
+                          href="/city/lucknow/sit-recovers-two-weapons-from-house-of-accused/articleshow/87073323.cms"
+                          >Kheri violence: SIT recovers 2 weapons from house</a
+                        ></span
+                      >
+                    </li>
+                    <li class="d-flex justify-content-start border-bottom py-2">
+                      <a
+                        pg="#9"
+                        href="https://www.gadgetsnow.com/slideshows/deals-of-the-day-in-amazon-sale-apple-ipad-samsung-tablet-oneplus-smart-tv-and-more/photolist/87059739.cms?utm_source=toiweb&amp;utm_medium=referral&amp;utm_campaign=toiweb_hptopnews"
+                        rel="nofollow"
+                        title="Deals of the day: Apple iPad, Samsung tablet &amp; more"
+                        class="w_img me-2"
+                        ><img
+                          pg="#9"
+                          src="https://static.toiimg.com/thumb/imgsize-9028,msid-87059987,width-81,resizemode-4/87059987.jpg"
+                          height="60px"
+                          width="80px" /></a
+                      ><span
+                        ><a
+                          pg="-2128958273#9"
+                          title="Deals of the day: Apple iPad, Samsung tablet &amp; more"
+                          class="small text-decoration-none text-dark ms-2"
+                          href="https://www.gadgetsnow.com/slideshows/deals-of-the-day-in-amazon-sale-apple-ipad-samsung-tablet-oneplus-smart-tv-and-more/photolist/87059739.cms?utm_source=toiweb&amp;utm_medium=referral&amp;utm_campaign=toiweb_hptopnews"
+                          rel="nofollow"
+                          >Deals of the day: Apple iPad, Samsung tablet &amp;</a
+                        ></span
+                      >
+                    </li>
+                    <li class="d-flex justify-content-start border-bottom py-2">
+                      <a
+                        pg="#10"
+                        href="/india/india-us-kick-off-military-drill-yudh-abhyas-in-alaska/articleshow/87074141.cms"
+                        title="India &amp; US kick off military drill ‘Yudh Abhyas’ in Alaska"
+                        class="w_img me-2"
+                        ><img
+                          pg="#10"
+                          src="https://static.toiimg.com/thumb/imgsize-936108,msid-87074142,width-81,resizemode-4/87074142.jpg"
+                          height="60px"
+                          width="80px" /></a
+                      ><span
+                        ><a
+                          pg="-2128958273#10"
+                          title="India &amp; US kick off military drill ‘Yudh Abhyas’ in Alaska"
+                          class="small text-decoration-none text-dark ms-2"
+                          href="/india/india-us-kick-off-military-drill-yudh-abhyas-in-alaska/articleshow/87074141.cms"
+                          >India &amp; US kick off military drill ‘Yudh</a
+                        ></span
+                      >
+                    </li>
+                    <li class="d-flex justify-content-start border-bottom py-2">
+                      <a
+                        pg="#11"
+                        href="https://www.gadgetsnow.com/tech-news/apple-regains-2nd-spot-in-global-smartphone-market/articleshow/87045602.cms?utm_source=toiweb&amp;utm_medium=referral&amp;utm_campaign=toiweb_hptopnews"
+                        rel="nofollow"
+                        title="Apple takes back No. 2 position from Xiaomi: Report"
+                        class="w_img me-2"
+                        ><img
+                          pg="#11"
+                          src="https://static.toiimg.com/thumb/imgsize-39830,msid-87059100,width-81,resizemode-4/87059100.jpg"
+                          height="60px"
+                          width="80px" /></a
+                      ><span
+                        ><a
+                          pg="-2128958273#11"
+                          title="Apple takes back No. 2 position from Xiaomi: Report"
+                          class="small text-decoration-none text-dark ms-2"
+                          href="https://www.gadgetsnow.com/tech-news/apple-regains-2nd-spot-in-global-smartphone-market/articleshow/87045602.cms?utm_source=toiweb&amp;utm_medium=referral&amp;utm_campaign=toiweb_hptopnews"
+                          rel="nofollow"
+                          >Apple takes back No. 2 position from Xiaomi:
+                          Report</a
+                        ></span
+                      >
+                    </li>
+                    <li class="d-flex justify-content-start border-bottom py-2">
+                      <a
+                        pg="#12"
+                        href="/india/bjp-mocks-congress-with-parivar-bachao-working-committee-jibe/articleshow/87074288.cms"
+                        title="BJP mocks Cong with ‘Parivar bachao working committee’ jibe"
+                        class="w_img me-2"
+                        ><img
+                          pg="#12"
+                          src="https://static.toiimg.com/thumb/imgsize-58026,msid-87074341,width-81,resizemode-4/87074341.jpg"
+                          height="60px"
+                          width="80px" /></a
+                      ><span
+                        ><a
+                          pg="-2128958273#12"
+                          title="BJP mocks Cong with ‘Parivar bachao working committee’ jibe"
+                          class="small text-decoration-none text-dark ms-2"
+                          href="/india/bjp-mocks-congress-with-parivar-bachao-working-committee-jibe/articleshow/87074288.cms"
+                          >BJP mocks Cong with ‘Parivar bachao working</a
+                        ></span
+                      >
+                    </li>
+                    <li class="d-flex justify-content-start border-bottom py-2">
+                      <a
+                        pg="#13"
+                        href="/india/deadline-misses-to-earn-national-highway-contractors-non-performer-tag/articleshow/87074932.cms"
+                        title="Deadline misses to earn NH contractors ‘non-performer’ tag"
+                        class="w_img me-2"
+                        ><img
+                          pg="#13"
+                          src="https://static.toiimg.com/thumb/imgsize-45538,msid-87074939,width-81,resizemode-4/87074939.jpg"
+                          height="60px"
+                          width="80px" /></a
+                      ><span
+                        ><a
+                          pg="-2128958273#13"
+                          title="Deadline misses to earn NH contractors ‘non-performer’ tag"
+                          class="small text-decoration-none text-dark ms-2"
+                          href="/india/deadline-misses-to-earn-national-highway-contractors-non-performer-tag/articleshow/87074932.cms"
+                          >Deadline misses to earn NH contractors</a
+                        ></span
+                      >
+                    </li>
+                    <li class="d-flex justify-content-start border-bottom py-2">
+                      <a
+                        pg="#14"
+                        href="https://www.gadgetsnow.com/how-to/how-to-transfer-money-through-upi-when-your-internet-is-not-working/articleshow/86832882.cms?utm_source=toiweb&amp;utm_medium=referral&amp;utm_campaign=toiweb_hptopnews"
+                        rel="nofollow"
+                        title="How to transfer money via UPI with no internet"
+                        class="w_img me-2"
+                        ><img
+                          pg="#14"
+                          src="https://static.toiimg.com/thumb/imgsize-44763,msid-87055690,width-81,resizemode-4/87055690.jpg"
+                          height="60px"
+                          width="80px" /></a
+                      ><span
+                        ><a
+                          pg="-2128958273#14"
+                          title="How to transfer money via UPI with no internet"
+                          href="https://www.gadgetsnow.com/how-to/how-to-transfer-money-through-upi-when-your-internet-is-not-working/articleshow/86832882.cms?utm_source=toiweb&amp;utm_medium=referral&amp;utm_campaign=toiweb_hptopnews"
+                          rel="nofollow"
+                          class="small text-decoration-none text-dark ms-2"
+                          >How to transfer money via UPI with no internet</a
+                        ></span
+                      >
+                    </li>
+                    <li class="d-flex justify-content-start border-bottom py-2">
+                      <a
+                        pg="#15"
+                        href="/india/rahul-may-take-over-congress-reins-from-sonia-next-year/articleshow/87073319.cms"
+                        title="Rahul may take over Congress reins from Sonia next year"
+                        class="w_img me-2"
+                        ><img
+                          pg="#15"
+                          src="https://static.toiimg.com/thumb/imgsize-101574,msid-87073360,width-81,resizemode-4/87073360.jpg"
+                          height="60px"
+                          width="80px" /></a
+                      ><span
+                        ><a
+                          pg="-2128958273#15"
+                          title="Rahul may take over Congress reins from Sonia next year"
+                          class="small text-decoration-none text-dark ms-2"
+                          href="/india/rahul-may-take-over-congress-reins-from-sonia-next-year/articleshow/87073319.cms"
+                          >Rahul may take over Congress reins from Sonia next</a
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+    <footer
+      style="background-color: black"
+      class="text-white small border-top border-danger border-2"
+    >
+      <div class="row">
+        <div class="text-white col-1"></div>
+        <div class="text-white col-5">
+          <div class="row mt-3">
+            <div class="footer-section-heading small">
+              OTHER TIMES GROUP NEWS SITES
+            </div>
+
+            <ul
+              class="
+                list-unstyled
+                mt-2
+                d-flex
+                justify-content-start
+                flex-wrap
+                footer-section
+              "
+            >
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-The_Economic_Times#Item_View-2-geturl"
+                  title="The Economic Times"
+                  href="https://economictimes.indiatimes.com"
+                  rel="nofollow"
+                  >The Economic Times</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Hindi_Economic_Times#Item_View-3-geturl"
+                  title="Hindi Economic Times"
+                  href="https://economictimes.indiatimes.com/hindi"
+                  rel="nofollow"
+                  >Hindi Economic Times</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Navbharat_Times#Item_View-4-geturl"
+                  title="Navbharat Times"
+                  href="https://navbharattimes.indiatimes.com"
+                  rel="nofollow"
+                  >Navbharat Times</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Maharashtra_Times#Item_View-5-geturl"
+                  title="Maharashtra Times"
+                  href="https://maharashtratimes.com/"
+                  rel="nofollow"
+                  >Maharashtra Times</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Vijaya_Karnataka#Item_View-6-geturl"
+                  title="Vijaya Karnataka"
+                  href="https://vijaykarnataka.com/"
+                  rel="nofollow"
+                  >Vijaya Karnataka</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Telugu_Samayam#Item_View-7-geturl"
+                  title="Telugu Samayam"
+                  href="https://telugu.samayam.com/"
+                  rel="nofollow"
+                  >Telugu Samayam</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Tamil_Samayam#Item_View-8-geturl"
+                  title="Tamil Samayam"
+                  href="https://tamil.samayam.com/"
+                  rel="nofollow"
+                  >Tamil Samayam</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Malayalam_Samayam#Item_View-9-geturl"
+                  title="Malayalam Samayam"
+                  href="https://malayalam.samayam.com/"
+                  rel="nofollow"
+                  >Malayalam Samayam</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Ei_Samay#Item_View-10-geturl"
+                  title="Ei Samay"
+                  href="https://eisamay.com"
+                  rel="nofollow"
+                  >Ei Samay</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-I_am_Gujarat#Item_View-11-geturl"
+                  title="I am Gujarat"
+                  href="https://www.iamgujarat.com/"
+                  rel="nofollow"
+                  >I am Gujarat</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Times_Now#Item_View-12-geturl"
+                  title="Times Now"
+                  href="https://www.timesnownews.com/"
+                  rel="nofollow"
+                  >Times Now</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Times_Now_Navbharat#Item_View-13-geturl"
+                  title="Times Now Navbharat"
+                  href="https://www.timesnowhindi.com/"
+                  rel="nofollow"
+                  >Times Now Navbharat</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-TimesPoints#Item_View-14-geturl"
+                  title="TimesPoints"
+                  href="https://www.timespoints.com/#/products?utm_source=TOI&amp;utm_medium=Footer&amp;utm_campaign=TOI_Footer"
+                  rel="nofollow"
+                  >TimesPoints</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Indiatimes#Item_View-15-geturl"
+                  title="Indiatimes"
+                  href="https://www.indiatimes.com/"
+                  rel="nofollow"
+                  >Indiatimes</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Brand_Capital#Item_View-16-geturl"
+                  title="Brand Capital"
+                  href="http://brandcapital.co.in/"
+                  rel="nofollow"
+                  >Brand Capital</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Education_Times#Item_View-17-geturl"
+                  title="Education Times"
+                  href="http://www.educationtimes.com/"
+                  rel="nofollow"
+                  >Education Times</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Times_Food#Item_View-18-geturl"
+                  title="Times Food"
+                  href="https://recipes.timesofindia.com/?_ga=2.136800816.1428222683.1593400724-amp-NKUM-n_c6RPY3Ify9MKZw1pfgLblvF469YKIurBFWMVAL1su-edve8E2rJu4yhmC"
+                  rel="nofollow"
+                  >Times Food</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Miss_Kyra#Item_View-19-geturl"
+                  title="Miss Kyra"
+                  href="https://www.misskyra.com/"
+                  rel="nofollow"
+                  >Miss Kyra</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Mumbai_Mirror#Item_View-20-geturl"
+                  title="Mumbai Mirror"
+                  href="https://mumbaimirror.indiatimes.com/"
+                  rel="nofollow"
+                  >Mumbai Mirror</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Pune_Mirror#Item_View-21-geturl"
+                  title="Pune Mirror"
+                  href="https://punemirror.indiatimes.com/"
+                  rel="nofollow"
+                  >Pune Mirror</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Ahmedabad_Mirror#Item_View-22-geturl"
+                  title="Ahmedabad Mirror"
+                  href="https://ahmedabadmirror.indiatimes.com"
+                  rel="nofollow"
+                  >Ahmedabad Mirror</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Bangalore_Mirror#Item_View-23-geturl"
+                  title="Bangalore Mirror"
+                  href="https://bangaloremirror.indiatimes.com"
+                  rel="nofollow"
+                  >Bangalore Mirror</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-MX_Player#Item_View-24-geturl"
+                  title="MX Player"
+                  href="https://www.mxplayer.in/"
+                  rel="nofollow"
+                  >MX Player</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Hindi_Podcast#Item_View-25-geturl"
+                  title="Hindi Podcast"
+                  href="https://navbharattimes.indiatimes.com/navbharatgold"
+                  rel="nofollow"
+                  >Hindi Podcast</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-Bengali_Podcast#Item_View-26-geturl"
+                  title="Bengali Podcast"
+                  href="https://eisamay.indiatimes.com/eisamaygold"
+                  rel="nofollow"
+                  >Bengali Podcast</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-MX_ShareKaro#Item_View-27-geturl"
+                  title="MX ShareKaro"
+                  href="https://mxsharekaro.onelink.me/xABK/8feed773"
+                  rel="nofollow"
+                  >MX ShareKaro</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Other_Times_Group_News_Sites/level1-MX_TakaTak_App#Item_View-28-geturl"
+                  title="MX TakaTak App"
+                  href="https://mxtakatak.onelink.me/vQZT/c3a98cd2"
+                  rel="nofollow"
+                  >MX TakaTak App</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="footer-section-heading small">
+              LIVING AND ENTERTAINMENT
+            </div>
+            <ul
+              class="
+                list-unstyled
+                mt-2
+                d-flex
+                justify-content-start
+                flex-wrap
+                footer-section
+              "
+              style="height: 114px"
+            >
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="https://www.idiva.com/?host=TOI"
+                  pg="Footer-level0-Living_and_Entertainment/level1-iDiva#Item_View-28-geturl"
+                  >iDiva
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="http://mensxp.com"
+                  pg="Footer-level0-Living_and_Entertainment/level1-MensXP#Item_View-29-geturl"
+                  >MensXP.com
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="http://www.femina.in"
+                  pg="Footer-level0-Living_and_Entertainment/level1-Femina#Item_View-30-geturl"
+                  >Femina
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://timesofindia.indiatimes.com/etimes"
+                  pg="Footer-level0-Living_and_Entertainment/level1-Entertainment#Item_View-31-geturl"
+                  >ETimes</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="http://www.grazia.co.in"
+                  pg="Footer-level0-Living_and_Entertainment/level1-Grazia#Item_View-32-geturl"
+                  >Grazia
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="https://www.zoomtventertainment.com/"
+                  pg="Footer-level0-Living_and_Entertainment/level1-Zoom#Item_View-33-geturl"
+                  >Zoom
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://timesofindia.indiatimes.com/travel/destinations"
+                  pg="Footer-level0-Living_and_Entertainment/level1-Travel_Destinations#Item_View-34-geturl"
+                  >Travel Destinations
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="http://www.bombaytimes.com"
+                  pg="Footer-level0-Living_and_Entertainment/level1-Bombay_Times#Item_View-38-geturl"
+                  >Bombay Times
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="http://cricbuzz.com"
+                  pg="Footer-level0-Living_and_Entertainment/level1-Cricbuzz#Item_View-39-geturl"
+                  >Cricbuzz.com
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="http://www.filmfare.com"
+                  pg="Footer-level0-Living_and_Entertainment/level1-Filmfare#Item_View-40-geturl"
+                  >Filmfare
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="https://gaana.com/newrelease"
+                  pg="Footer-level0-Living_and_Entertainment/level1-Online_Songs#Item_View-41-geturl"
+                  >Online Songs
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://timesofindia.indiatimes.com/tv/hindi"
+                  pg="Footer-level0-Living_and_Entertainment/level1-tv#Item_View-42-geturl"
+                  >TV</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://timesofindia.indiatimes.com/life-style"
+                  pg="Footer-level0-Living_and_Entertainment/level1-life-style#Item_View-43-geturl"
+                  >Lifestyle
+                </a>
+              </li>
+              <li>
+                <a
+                  rel="nofollow"
+                  target="_blank"
+                  href="https://longwalks.onelink.me/OzWN/longwalksapp"
+                  pg="Footer-level0-Living_and_Entertainment/level1-Longwalks-App#Item_View-44-geturl"
+                  >Longwalks App</a
+                >
+              </li>
+              <li>
+                <a
+                  rel="nofollow"
+                  target="_blank"
+                  href="https://subscribe.timesgroup.com/subscription"
+                  pg="Footer-level0-Living_and_Entertainment/level1-Order-Newspaper#Item_View-45-geturl"
+                  >Newspaper Subscription</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://timesofindia.indiatimes.com/life-style/food-news"
+                  pg="Footer-level0-Living_and_Entertainment/level1-Food-News#Item_View-46-geturl"
+                  >Food News</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="https://www.timesprime.com?utm_source=TOI_Sites&amp;utm_medium=et&amp;utm_campaign=footer"
+                  pg="Footer-level0-Living_and_Entertainment/level1-Times-Prime#Item_View-47-geturl"
+                  >Times Prime</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="https://www.whatshot.in/"
+                  pg="Footer-level0-Living_and_Entertainment/level1-Whats-Hot#Item_View-48-geturl"
+                  >Whats Hot</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="footer-section-heading small">TOP TRENDS</div>
+            <ul
+              class="
+                list-unstyled
+                mt-2
+                d-flex
+                justify-content-start
+                flex-wrap
+                footer-section
+              "
+              style="height: 114px"
+            >
+              <li>
+                <a
+                  pg="Footer-level0-Top_Trends/level1-Covid_Cases_in_India#Item_View-42-geturl"
+                  title="Covid Cases in India"
+                  href="https://timesofindia.indiatimes.com/india/india-logs-18987-fresh-covid-cases-246-new-deaths/articleshow/87011653.cms"
+                  >Covid Cases in India</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Top_Trends/level1-Lakhimpur_Kheri_News#Item_View-43-geturl"
+                  title="Lakhimpur Kheri News"
+                  href="https://timesofindia.indiatimes.com/city/lucknow/lakhimpur-kheri-violence-ashish-mishra-live-updates/liveblog/87009910.cms"
+                  >Lakhimpur Kheri News</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Top_Trends/level1-Coronavirus_India_update_live#Item_View-44-geturl"
+                  title="Coronavirus India update live"
+                  href="https://timesofindia.indiatimes.com/india/coronavirus-live-updates-october-12/liveblog/86954361.cms"
+                  >Coronavirus India update live</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Top_Trends/level1-CSK_vs_KKR#Item_View-45-geturl"
+                  title="CSK vs KKR"
+                  href="https://timesofindia.indiatimes.com/sports/cricket/ipl/live-blog/ipl-2021-final-csk-vs-kkr-live-score-updates/liveblog/87039455.cms"
+                  >CSK vs KKR</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Top_Trends/level1-MS_Dhoni#Item_View-46-geturl"
+                  title="MS Dhoni"
+                  href="https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ms-dhoni-becomes-first-captain-to-lead-300-matches-in-t20-format/articleshow/87042782.cms"
+                  >MS Dhoni</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Top_Trends/level1-CBSE_Date_Sheet_2021_Term_1#Item_View-47-geturl"
+                  title="CBSE Date Sheet 2021 Term 1"
+                  href="https://timesofindia.indiatimes.com/home/education/news/cbse-date-sheet-2021-term-1-board-exams-for-classes-10-12-to-be-conducted-offline-date-sheet-to-be-released-on-october-18-cbse/articleshow/87023160.cms"
+                  >CBSE Date Sheet 2021 Term 1</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Top_Trends/level1-Maharashtra_College_Reopen#Item_View-48-geturl"
+                  title="Maharashtra College Reopen"
+                  href="https://timesofindia.indiatimes.com/city/mumbai/univs-colleges-must-conduct-vax-camps-for-students-in-mumbai-min/articleshow/87007600.cms"
+                  >Maharashtra College Reopen</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Top_Trends/level1-IPL_Final_2021#Item_View-49-geturl"
+                  title="IPL Final 2021"
+                  href="https://timesofindia.indiatimes.com/sports/cricket/ipl/live-blog/csk-vs-kkr-live-score-ipl-2021-final/liveblog/87039372.cms"
+                  >IPL Final 2021</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Top_Trends/level1-Tata_Punch_SUV#Item_View-50-geturl"
+                  title="Tata Punch SUV"
+                  href="https://timesofindia.indiatimes.com/auto/cars/tata-punch-suv-scores-5-star-in-global-ncap-crash-test/articleshow/87017086.cms"
+                  >Tata Punch SUV</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Top_Trends/level1-T20_World_Cup_2021_India_Squad#Item_View-51-geturl"
+                  title="T20 World Cup 2021 India Squad"
+                  href="https://timesofindia.indiatimes.com/sports/cricket/icc-mens-t20-world-cup/t20-world-cup-shardul-thakur-replaces-axar-patel-in-team-indias-squad/articleshow/86992456.cms"
+                  >T20 World Cup 2021 India Squad</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Top_Trends/level1-Navaratri_2021_Date#Item_View-52-geturl"
+                  title="Navaratri 2021 Date"
+                  href="https://timesofindia.indiatimes.com/religion/festivals/navaratri-2021-date-time-check-durga-puja-start-date-and-end-date/articleshow/86751409.cms"
+                  >Navaratri 2021 Date</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Top_Trends/level1-Assam_Earthquake#Item_View-53-geturl"
+                  title="Assam Earthquake"
+                  href="https://timesofindia.indiatimes.com/city/guwahati/3-3-magnitude-earthquake-hits-assam/articleshow/87017538.cms"
+                  >Assam Earthquake</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Top_Trends/level1-How_to_Buy_Bitcoin#Item_View-54-geturl"
+                  title="How to Buy Bitcoin"
+                  href="https://timesofindia.indiatimes.com/business/cryptocurrency/bitcoin/how-to-buy-bitcoins-in-india/articleshow/86872622.cms"
+                  >How to Buy Bitcoin</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Top_Trends/level1-BMW_3_Series_Gran_Limousine_Price#Item_View-55-geturl"
+                  title="BMW 3 Series Gran Limousine Price"
+                  href="https://timesofindia.indiatimes.com/auto/cars/bmw-3-series-gran-limousine-iconic-edition-launched-in-india-at-rs-53-5-lakh/articleshow/87018035.cms"
+                  >BMW 3 Series Gran Limousine Price</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Top_Trends/level1-Cryptocurrency_price_in_India#Item_View-56-geturl"
+                  title="Cryptocurrency price in India"
+                  href="https://timesofindia.indiatimes.com/business/cryptocurrency/cryptocurrency-price-in-india-today-live"
+                  >Cryptocurrency price in India</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Top_Trends/level1-Weekly_Horoscope#Item_View-57-geturl"
+                  title="Weekly Horoscope"
+                  href="https://timesofindia.indiatimes.com/astrology/horoscope/weekly-horoscope-10-to-16-october-2021-check-predictions-for-all-zodiac-signs/articleshow/86858763.cms"
+                  >Weekly Horoscope</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Top_Trends/level1-Horoscope_today#Item_View-58-geturl"
+                  title="Horoscope today"
+                  href="https://timesofindia.indiatimes.com/astrology/horoscope/horoscope-today-13-october-2021-check-astrological-prediction-for-aries-taurus-gemini-cancer-and-other-signs/articleshow/86858658.cms"
+                  >Horoscope today</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Top_Trends/level1-Latest_News#Item_View-59-geturl"
+                  title="Latest News"
+                  href="https://timesofindia.indiatimes.com/news"
+                  >Latest News</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-white col-5">
+          <div class="row mt-3">
+            <div class="footer-section-heading small">SERVICES</div>
+            <ul
+              class="
+                list-unstyled
+                mt-2
+                d-flex
+                justify-content-start
+                flex-wrap
+                footer-section
+              "
+              style="height: 57px"
+            >
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="https://www.ads2book.com/?ref=timesofindia"
+                  pg="Footer-level0-Services/level1-Ads_2_Book#Item_View-58-geturl"
+                  >Ads 2 Book</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="https://play.google.com/store/apps/details?id=co.gradeup.android&amp;hl=en&amp;utm_source=Organic_TOI&amp;utm_medium=Backlink&amp;utm_term=KW_BankExamApp&amp;utm_campaign=TOI_Backlink"
+                  pg="Footer-level0-Services/level1-Bank_Exam_App#Item_View-59-geturl"
+                  >Bank Exam App</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="https://play.google.com/store/apps/details?id=com.smartspends"
+                  pg="Footer-level0-Services/level1-ET_Money_Finance_App#Item_View-60-geturl"
+                  >ET Money Finance App</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="http://www.coupondunia.in/"
+                  pg="Footer-level0-Services/level1-CouponDunia#Item_View-61-geturl"
+                  >CouponDunia</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="https://www.dineout.co.in/"
+                  pg="Footer-level0-Services/level1-Dineout#Item_View-62-geturl"
+                  >Dineout</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="http://www.magicbricks.com/"
+                  pg="Footer-level0-Services/level1-Magic_Bricks#Item_View-64-geturl"
+                  >Magicbricks</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="http://www.techgig.com"
+                  pg="Footer-level0-Services/level1-Techgig#Item_View-65-geturl"
+                  >Techgig</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="http://www.timesjobs.com/"
+                  pg="Footer-level0-Services/level1-Times_Jobs#Item_View-66-geturl"
+                  >Times Jobs</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="https://play.google.com/store/apps/details?id=in.til.popkorn"
+                  pg="Footer-level0-Services/level1-Bollywood_News#Item_View-67-geturl"
+                  >Bollywood News</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="http://www.timesmobile.in/"
+                  pg="Footer-level0-Services/level1-iDiva#Item_View-68-geturl"
+                  >Times Mobile</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="https://www.remit2india.com/sendmoneytoindia/homepage.jsp"
+                  pg="Footer-level0-Services/level1-Remit_2_India#Item_View-70-geturl"
+                  >Remit 2 India</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="http://www.tcnext.com/"
+                  pg="Footer-level0-Services/level1-TC_Next#Item_View-71-geturl"
+                  >TC Next</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="http://www.astrospeak.com"
+                  pg="Footer-level0-Services/level1-Astro_Speak#Item_View-74-geturl"
+                  >Astro Speak</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="https://www.gadgetsnow.com/"
+                  pg="Footer-level0-Services/level1-Gadgets_Now#Item_View-76-geturl"
+                  >Gadgets Now</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="http://careers.timesgroup.com/"
+                  pg="Footer-level0-Services/level1-careers#Item_View-77-geturl"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="https://www.colombiaonline.com/"
+                  pg="Footer-level0-Services/level1-Colombia#Item_View-78-geturl"
+                  >Colombia</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="row mt-5">
+            <div class="footer-section-heading small">POPULAR CATEGORIES</div>
+            <ul
+              class="
+                list-unstyled
+                mt-2
+                d-flex
+                justify-content-start
+                flex-wrap
+                footer-section
+              "
+              style="height: 57px"
+            >
+              <li>
+                <a
+                  href="https://timesofindia.indiatimes.com/home/headlines"
+                  pg="Footer-level0-Popular_Categories/level1-Headlines#Item_View-78-geturl"
+                  >Headlines</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://timesofindia.indiatimes.com/sports"
+                  pg="Footer-level0-Popular_Categories/level1-Sports_News#Item_View-79-geturl"
+                  >Sports News</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://timesofindia.indiatimes.com/business/india-business"
+                  pg="Footer-level0-Popular_Categories/level1-Business_News#Item_View-80-geturl"
+                  >Business News</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://timesofindia.indiatimes.com/india"
+                  pg="Footer-level0-Popular_Categories/level1-India_News#Item_View-81-geturl"
+                  >India News</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://timesofindia.indiatimes.com/world"
+                  pg="Footer-level0-Popular_Categories/level1-World_News#Item_View-82-geturl"
+                  >World News</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news"
+                  pg="Footer-level0-Popular_Categories/level1-Bollywood_News#Item_View-83-geturl"
+                  >Bollywood News</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://timesofindia.indiatimes.com/life-style/health-fitness"
+                  pg="Footer-level0-Popular_Categories/level1-Health_&amp;_Fitness_Tips#Item_View-84-geturl"
+                  >Health &amp; Fitness Tips</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://timesofindia.indiatimes.com/tv/hindi"
+                  pg="Footer-level0-Popular_Categories/level1-Indian_TV_Shows#Item_View-85-geturl"
+                  >Indian TV Shows</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://photogallery.indiatimes.com/celebs/articlelist/2371672.cms"
+                  pg="Footer-level0-Popular_Categories/level1-Celebrity_Photos#Item_View-86-geturl"
+                  >Celebrity Photos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="footer-section-heading small">HOT ON THE WEB</div>
+            <ul
+              class="
+                list-unstyled
+                mt-2
+                d-flex
+                justify-content-start
+                flex-wrap
+                footer-section
+              "
+              style="height: 57px"
+            >
+              <li>
+                <a
+                  pg="Footer-level0-Hot_on_the_Web/level1-Dussehra_Wishes#Item_View-87-geturl"
+                  title="Dussehra Wishes"
+                  href="https://timesofindia.indiatimes.com/life-style/events/happy-dussehra-2021-top-50-wishes-messages-and-quotes-to-share-with-your-loved-ones/articleshow/86965662.cms"
+                  >Dussehra Wishes</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Hot_on_the_Web/level1-Dussehra_History#Item_View-88-geturl"
+                  title="Dussehra History"
+                  href="https://timesofindia.indiatimes.com/life-style/events/when-is-dussehra-2021-history-significance-facts-celebration-and-all-you-need-to-know/articleshow/86963932.cms"
+                  >Dussehra History</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Hot_on_the_Web/level1-Best_Dussehra_Messages#Item_View-89-geturl"
+                  title="Best Dussehra Messages"
+                  href="https://timesofindia.indiatimes.com/life-style/events/happy-dussehra-2021-best-messages-quotes-wishes-and-images-to-share-on-dussehra/articleshow/86965675.cms"
+                  >Best Dussehra Messages</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Hot_on_the_Web/level1-Dussehra_Quotes#Item_View-90-geturl"
+                  title="Dussehra Quotes"
+                  href="https://timesofindia.indiatimes.com/life-style/events/best-dussehra-2021-quotes-wishes-and-messages-to-share-with-your-loved-ones/articleshow/86975546.cms"
+                  >Dussehra Quotes</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Hot_on_the_Web/level1-Aryan_Khan_Arrest_News#Item_View-91-geturl"
+                  title="Aryan Khan Arrest News"
+                  href="https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/shah-rukh-khan-aryan-khan-gauri-khan-suhana-khan-arbaaz-merchant-mumbai-cruise-drug-party/liveblog/86982825.cms"
+                  >Aryan Khan Arrest News</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Hot_on_the_Web/level1-Dussehra_Recipes#Item_View-92-geturl"
+                  title="Dussehra Recipes"
+                  href="https://timesofindia.indiatimes.com/life-style/food-news/dussehra-2021-easy-vijaydashmi-recipes-anyone-can-make-at-home/photostory/87021309.cms"
+                  >Dussehra Recipes</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Hot_on_the_Web/level1-Pooja_Hegde#Item_View-93-geturl"
+                  title="Pooja Hegde"
+                  href="https://timesofindia.indiatimes.com/entertainment/telugu/web-stories/10-beautiful-selfies-of-pooja-hegde-thatll-beat-monday-blues/photostory/86930546.cms"
+                  >Pooja Hegde</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Hot_on_the_Web/level1-Samantha_Ruth_Prabhu#Item_View-94-geturl"
+                  title="Samantha Ruth Prabhu"
+                  href="https://timesofindia.indiatimes.com/life-style/beauty/web-stories/from-samantha-ruth-prabhu-to-sai-pallavi-stunning-no-makeup-looks-of-south-indian-sensations/photostory/86960756.cms"
+                  >Samantha Ruth Prabhu</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Hot_on_the_Web/level1-Pooja_Hegde_Birthday#Item_View-95-geturl"
+                  title="Pooja Hegde Birthday"
+                  href="https://timesofindia.indiatimes.com/entertainment/telugu/web-stories/happy-birthday-pooja-hegde-8-times-she-made-heads-turn-with-her-costumes/photostory/86841316.cms"
+                  >Pooja Hegde Birthday</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="footer-section-heading small">TRENDING TOPICS</div>
+            <ul
+              class="
+                list-unstyled
+                mt-2
+                d-flex
+                justify-content-start
+                flex-wrap
+                footer-section
+              "
+              style="height: 133px"
+            >
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-Dussehra_Puja_Vidhi#Item_View-97-geturl"
+                  title="Dussehra Puja Vidhi"
+                  href="https://timesofindia.indiatimes.com/life-style/events/dussehra-2021-puja-vidhi-shubh-mahurat-and-all-you-need-to-know/articleshow/86995236.cms"
+                  >Dussehra Puja Vidhi</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-Dussehra_2021#Item_View-98-geturl"
+                  title="Dussehra 2021"
+                  href="https://timesofindia.indiatimes.com/life-style/events/happy-dussehra-2021-images-quotes-wishes-messages-cards-greetings-pictures-and-gifs/articleshow/86997582.cms"
+                  >Dussehra 2021</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-DussehraStatus#Item_View-99-geturl"
+                  title="DussehraStatus"
+                  href="https://timesofindia.indiatimes.com/life-style/events/happy-dussehra-2021-wishes-messages-quotes-images-facebook-whatsapp-status/articleshow/86961709.cms"
+                  >DussehraStatus</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-Dussehra_Pictures#Item_View-100-geturl"
+                  title="Dussehra Pictures"
+                  href="https://timesofindia.indiatimes.com/life-style/events/happy-dussehra-2021-images-wishes-messages-quotes-pictures-and-greeting-cards/photostory/86992720.cms"
+                  >Dussehra Pictures</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-Dussehra_Foods#Item_View-101-geturl"
+                  title="Dussehra Foods"
+                  href="https://recipes.timesofindia.com/web-stories/dishes-prepared-for-dussehra-celebration-across-india/photostory/87014725.cms"
+                  rel="nofollow"
+                  >Dussehra Foods</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-Aryan_Khan_Drugs_Case#Item_View-102-geturl"
+                  title="Aryan Khan Drugs Case"
+                  href="https://timesofindia.indiatimes.com/entertainment/hindi/web-stories/aryan-khans-drugs-case-explained/photostory/86962670.cms"
+                  >Aryan Khan Drugs Case</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-Aryan_Khan#Item_View-103-geturl"
+                  title="Aryan Khan"
+                  href="https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/drug-case-asg-says-under-section-29-aryan-khan-be-charged-the-same-as-a-conspirator/articleshow/86995916.cms"
+                  >Aryan Khan</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-Shah_Rukh_Khan#Item_View-104-geturl"
+                  title="Shah Rukh Khan"
+                  href="https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/shah-rukh-khans-josh-co-star-puneet-vashisht-hits-out-at-khans-amid-aryan-khans-arrest-says-god-has-boycotted-them-all/articleshow/86983586.cms"
+                  >Shah Rukh Khan</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-Aryan_Khan_Arrest#Item_View-105-geturl"
+                  title="Aryan Khan Arrest"
+                  href="https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/aryan-khan-drug-case-after-negative-covid-report-shah-rukh-khans-son-along-with-five-others-shifted-to-common-cell-from-quarantine-barrack-in-arthur-road-jail/articleshow/87013447.cms"
+                  >Aryan Khan Arrest</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-Aryan_Khan_Lawyer#Item_View-106-geturl"
+                  title="Aryan Khan Lawyer"
+                  href="https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/supreme-court-lawyer-khushbu-jain-excessive-exposure-can-damage-aryan-khans-reputation-for-life-exclusive/articleshow/87003874.cms"
+                  >Aryan Khan Lawyer</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-Raj_Kundra#Item_View-107-geturl"
+                  title="Raj Kundra"
+                  href="https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/shilpa-shetty-and-raj-kundra-warn-sherlyn-chopra-of-a-defamation-case/articleshow/87015370.cms"
+                  >Raj Kundra</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-Nora_fatehi#Item_View-108-geturl"
+                  title="Nora fatehi"
+                  href="https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/nora-fatehi-arrives-at-the-ed-office-for-her-round-of-questioning-watch/articleshow/87016817.cms"
+                  >Nora fatehi</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-Best_Mobile_under_10000#Item_View-109-geturl"
+                  title="Best Mobile under 10000"
+                  href="https://timesofindia.indiatimes.com/gadgets-news/best-mobile-phones-under-10000-in-india/articleshow/86426894.cms"
+                  >Best Mobile under 10000</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-Best_Mobile_under_15000#Item_View-110-geturl"
+                  title="Best Mobile under 15000"
+                  href="https://timesofindia.indiatimes.com/gadgets-news/best-mobile-phones-under-150000/articleshow/86680428.cms"
+                  >Best Mobile under 15000</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-Apple_New_iPad#Item_View-111-geturl"
+                  title="Apple New iPad"
+                  href="https://timesofindia.indiatimes.com/gadgets-news/apple-launches-its-most-affordable-new-ipad-all-the-details/articleshow/86208766.cms"
+                  >Apple New iPad</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-Apple_Watch_Series_7#Item_View-112-geturl"
+                  title="Apple Watch Series 7"
+                  href="https://timesofindia.indiatimes.com/gadgets-news/apple-announces-watch-series-7-price-features-and-more/articleshow/86211048.cms"
+                  >Apple Watch Series 7</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-Jio_Recharge_Plan#Item_View-113-geturl"
+                  title="Jio Recharge Plan"
+                  href="https://timesofindia.indiatimes.com/gadgets-news/reliance-jio-discontinues-two-jiophone-recharge-plans/articleshow/86059751.cms"
+                  >Jio Recharge Plan</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-Laptops_under_30000#Item_View-114-geturl"
+                  title="Laptops under 30000"
+                  href="https://timesofindia.indiatimes.com/most-searched-products/electronics/laptops/buy-laptops-under-30000-that-are-inexpensive-but-highly-rated-by-experts/articleshow/71184133.cms?"
+                  >Laptops under 30000</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-WiFi_Routers#Item_View-115-geturl"
+                  title="WiFi Routers"
+                  href="https://timesofindia.indiatimes.com/most-searched-products/electronics/miscellaneous/wifi-routers-with-a-sim-card-slot-best-picks-for-seamless-internet-connection/articleshow/86811705.cms"
+                  >WiFi Routers</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-Tablets_under_15000#Item_View-116-geturl"
+                  title="Tablets under 15000"
+                  href="https://timesofindia.indiatimes.com/most-searched-products/electronics/tablets/best-tablets-under-rs-15000-with-decent-features-and-performance/articleshow/85176725.cms"
+                  >Tablets under 15000</a
+                >
+              </li>
+              <li>
+                <a
+                  pg="Footer-level0-Trending_Topics/level1-Laptops_under_40000#Item_View-117-geturl"
+                  title="Laptops under 40000"
+                  href="https://timesofindia.indiatimes.com/most-searched-products/electronics/laptops/laptops-under-rs-40000-highly-rated-ones-from-dell-hp-lenovo-and-more/articleshow/71542158.cms"
+                  >Laptops under 40000</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-white col-1"></div>
+      </div>
+      <div class="row follow-footer mt-5">
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-5">
+            <div class="d-flex flex-column align-items-end border-on-right">
+              <div class="small">FOLLOW US ON</div>
+              <ul
+                class="
+                  list-unstyled
+                  d-flex
+                  justify-content-end
+                  footer-section
+                  mt-3
+                "
+              >
+                <li class="fb" style="width: 4rem">
+                  <a
+                    target="_blank"
+                    rel="nofollow"
+                    href="https://www.facebook.com/TimesofIndia"
+                    pg="Footer-Social_Section#Click-facebook"
+                    ><i></i>FACEBOOK</a
+                  >
+                </li>
+                <li class="twitter ms-3" style="width: 4rem">
+                  <a
+                    target="_blank"
+                    rel="nofollow"
+                    href="https://twitter.com/timesofindia"
+                    pg="Footer-Social_Section#Click-twitter"
+                    ><i></i>TWITTER</a
+                  >
+                </li>
+                <li class="rss" style="width: 4rem">
+                  <a
+                    href="https://timesofindia.indiatimes.com/rss.cms"
+                    pg="Footer-Social_Section#Click-rss_feed"
+                    ><i></i>RSS FEED</a
+                  >
+                </li>
+                <li class="youtube" style="width: 4rem">
+                  <a
+                    rel="nofollow"
+                    href="https://www.youtube.com/timesofindia"
+                    pg="Footer-Social_Section#Click-youtube"
+                    ><i></i>YOUTUBE</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="d-flex flex-column align-items-start ms-3">
+              <div class="small">DOWNLOAD TOI APP</div>
+              <ul
+                class="
+                  list-unstyled
+                  d-flex
+                  justify-content-start
+                  footer-section
+                  mt-3
+                "
+              >
+                <li class="android" style="width: 4rem">
+                  <a
+                    rel="nofollow"
+                    href="https://play.google.com/store/apps/details?id=com.toi.reader.activities&amp;utm_source=TOInewHP_TILwidget&amp;utm_medium=ABtest&amp;utm_campaign=TOInewHP"
+                    pg="Footer-App_Download#Click-android"
+                    ><i></i>android</a
+                  >
+                </li>
+                <li class="iphone" style="width: 4rem">
+                  <a
+                    rel="nofollow"
+                    href="https://itunes.apple.com/us/app/the-times-of-india/id427589329?utm_source=TOInewHP_TILwidget&amp;utm_medium=ABtest&amp;utm_campaign=TOInewHP"
+                    pg="Footer-App_Download#Click-iphone"
+                    ><i></i>iphone</a
+                  >
+                </li>
+                <li class="blackberry" style="width: 4rem">
+                  <a
+                    rel="nofollow"
+                    href="http://appworld.blackberry.com/webstore/content/36532/?utm_source=TOInewHP_TILwidget&amp;utm_medium=ABtest&amp;utm_campaign=TOInewHP"
+                    pg="Footer-App_Download#Click-BlackBerry"
+                    ><i></i>BlackBerry</a
+                  >
+                </li>
+                <li class="ipad" style="width: 4rem">
+                  <a
+                    rel="nofollow"
+                    href="https://itunes.apple.com/us/app/the-times-of-india-for-ipad/id427164653?utm_source=TOInewHP_TILwidget&amp;utm_medium=ABtest&amp;utm_campaign=TOInewHP"
+                    pg="Footer-App_Download#Click-ipad"
+                    ><i></i>ipad</a
+                  >
+                </li>
+                <li class="windows" style="width: 6rem">
+                  <a
+                    rel="nofollow"
+                    href="http://www.windowsphone.com/en-in/store/app/the-times-of-india/26c39c5c-7a5a-4173-9a93-7c5bd539d4c8?utm_source=TOInewHP_TILwidget&amp;utm_medium=ABtest&amp;utm_campaign=TOInewHP"
+                    pg="Footer-App_Download#Click-windows_phone"
+                    ><i></i>windows phone</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-1"></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
